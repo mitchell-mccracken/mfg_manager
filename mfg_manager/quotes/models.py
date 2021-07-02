@@ -5,7 +5,8 @@ from datetime import datetime
 
 class Quote(models.Model):
     q_title = models.CharField(max_length=200)
-    q_date_created = models.DateTimeField('date published')
+    # q_date_created = models.DateTimeField('date published')
+    q_date_created = models.DateTimeField(default=datetime.now)
     customer_name = models.CharField(max_length=200 , default='none')
     contact_name = models.CharField(max_length=200 , default='none')
     customer_address = models.CharField(max_length=400 , default='none')
