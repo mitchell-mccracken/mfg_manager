@@ -19,7 +19,8 @@ from .router import router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('quotes/' , include('quotes.urls')),
+    path('quotes/' , include('quotes.urls')),   # this doesn't actually do anything
+    path('users/' , include('users.urls')),
     path('api/' , include(router.urls))
 
 ]
