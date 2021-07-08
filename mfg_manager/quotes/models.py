@@ -11,6 +11,14 @@ class Quote(models.Model):
     customer_name = models.CharField(max_length=200 , default='none')
     contact_name = models.CharField(max_length=200 , default='none')
     customer_address = models.CharField(max_length=400 , default='none')
+    contact_phone = models.CharField(max_length=15, default='867-5309')
+    lead_time = models.CharField(max_length=100, default='N/A')
+    part_number = models.CharField(max_length=100, default='N/A')
+    part_description = models.CharField(max_length=100, default='N/A')
+    part_qty = models.CharField(max_length=100, default='N/A')
+    part_cost = models.CharField(max_length=100, default='N/A')
+    q_addepted = models.BooleanField(default=False)
+    date_accepted = models.CharField(max_length=100, default='N/A')
     def __str__(self):
         return self.q_title
 
