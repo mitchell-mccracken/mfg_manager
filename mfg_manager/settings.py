@@ -65,6 +65,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
   'http://localhost:8000',
   'http://localhost:3000',
+  'https://mfg-manager-api.herokuapp.com/'
 )
 
 ROOT_URLCONF = 'mfg_manager.urls'
