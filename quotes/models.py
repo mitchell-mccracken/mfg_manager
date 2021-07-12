@@ -21,6 +21,7 @@ class Quote(models.Model):
     date_accepted = models.CharField(max_length=100, default='N/A')
     # quote_total = models.CharField(max_length=20, default='N/A', blank=True)
     quote_total = models.DecimalField(max_digits=6, decimal_places=2, default='0.00')
+    quote_notes = models.CharField(max_length=500, default='', blank=True)
     def __str__(self):
         return self.q_title
 
