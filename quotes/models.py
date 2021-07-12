@@ -22,6 +22,6 @@ class Quote(models.Model):
     def __str__(self):
         return self.q_title
 
-class AppUser(models.Model):
-    user= models.OneToOneField(User, on_delete=models.CASCADE)
-    department = models.CharField(max_length=100)
+# class AppUser(models.Model):
+#     user= models.OneToOneField(User, on_delete=models.CASCADE)
+#     department = models.CharField(max_length=100)

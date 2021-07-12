@@ -13,9 +13,9 @@ class QuoteViewset(viewsets.ModelViewSet):
     queryset = models.Quote.objects.all()
     serializer_class = serializers.QuoteSerializer
 
-class AppUserViewset(viewsets.ModelViewSet):
-    queryset = models.AppUser.objects.all()
-    serializer_class = serializers.AppUserSerializer
+# class AppUserViewset(viewsets.ModelViewSet):
+#     queryset = models.AppUser.objects.all()
+#     serializer_class = serializers.AppUserSerializer
 
 # list(), retrieve(), create(), update(), destroy()
 
