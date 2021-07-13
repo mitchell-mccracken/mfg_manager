@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Quote
+from .models import OpenOrder, Quote
 # from .models import AppUser
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
@@ -8,6 +8,11 @@ class QuoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Quote
         fields = '__all__'
+
+class OpenOrderSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = OpenOrder
+        fields= '__all__'
 
 # class AppUserSerializer(serializers.ModelSerializer):
 #     class Meta:

@@ -13,6 +13,10 @@ class QuoteViewset(viewsets.ModelViewSet):
     queryset = models.Quote.objects.all()
     serializer_class = serializers.QuoteSerializer
 
+class OpenOrderViewset(viewsets.ModelViewSet):
+    queryset = models.OpenOrder.objects.all()
+    serializer_class = serializers.OpenOrderSerializer
+
 # class AppUserViewset(viewsets.ModelViewSet):
 #     queryset = models.AppUser.objects.all()
 #     serializer_class = serializers.AppUserSerializer
