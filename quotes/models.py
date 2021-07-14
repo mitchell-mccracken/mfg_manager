@@ -31,8 +31,3 @@ class OpenOrder(models.Model):
     o_title = models.CharField(max_length=200)
     o_start_date = models.DateTimeField(default=datetime.now)
 
-
-#comment
-# class AppUser(models.Model):
-#     user= models.OneToOneField(User, on_delete=models.CASCADE)
-#     department = models.CharField(max_length=100)

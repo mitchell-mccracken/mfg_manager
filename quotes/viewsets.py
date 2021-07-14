@@ -17,12 +17,8 @@ class OpenOrderViewset(viewsets.ModelViewSet):
     queryset = models.OpenOrder.objects.all()
     serializer_class = serializers.OpenOrderSerializer
 
-# class AppUserViewset(viewsets.ModelViewSet):
-#     queryset = models.AppUser.objects.all()
-#     serializer_class = serializers.AppUserSerializer
 
 # list(), retrieve(), create(), update(), destroy()
-
 
 # Register API
 class RegisterAPI(generics.GenericAPIView):
@@ -36,8 +32,6 @@ class RegisterAPI(generics.GenericAPIView):
             "user": UserSerializer(user, context = self.get_serializer_context()).data,
             "token": AuthToken.objects.create(user)[1]
         })
-
-
 
 # Login API
 class LoginAPI(generics.GenericAPIView):

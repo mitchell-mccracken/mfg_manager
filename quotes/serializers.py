@@ -14,11 +14,6 @@ class OpenOrderSerializer(serializers.ModelSerializer):
         model = OpenOrder
         fields= '__all__'
 
-# class AppUserSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = AppUser 
-#         fields ='__all__'
-
 
 #User Serailizer
 # from -> https://www.youtube.com/watch?v=0d7cIfiydAc 
