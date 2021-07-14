@@ -27,7 +27,7 @@ class Quote(models.Model):
         return self.q_title
 
 class OpenOrder(models.Model):
-    q_id = models.CharField(max_length=10)
+    q_id = models.CharField(max_length=10 , primary_key=True)
     o_title = models.CharField(max_length=200)
     o_start_date = models.DateTimeField(default=datetime.now)
 
